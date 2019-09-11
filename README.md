@@ -21,14 +21,14 @@ Exemplo:
 ```
 const options = {   
    webservice: {  
-      cep: '#seuIdentificador', // Por padrão = false  
-      endereco: '#seuIdentificador', // Por padrão = false  
-      bairro: '#seuIdentificador', // Por padrão = false
-      estado: '#seuIdentificador' // Por padrão = false 
+      cep: '#exemploCEP', // Por padrão = false  
+      endereco: '#exemploEndereco', // Por padrão = false  
+      bairro: '#exemploBairro', // Por padrão = false
+      estado: '#exemploEstado' // Por padrão = false 
    }, 
-   cpf: '#seuIdentificador', // Por padrão = false 
-   cnpj: '#seuIdentificador', // Por padrão = false 
-   telefone: '#seuIdentificador' // Por padrão = false 
+   cpf: '#exemploCPF', // Por padrão = false 
+   cnpj: '#exemploCNPJ', // Por padrão = false 
+   telefone: '#exemploTelefone' // Por padrão = false 
 };
 ```    
 
