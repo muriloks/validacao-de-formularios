@@ -71,7 +71,7 @@ const formatarCPF = cpf => {
 // Fim da validação e formatação do CPF
 
 
-// Validando e foramtando o CNPJ
+// Validando e formatando o CNPJ
 
 if (options.cnpj) $(options.cnpj).keyup(function () {
    CNPJ($(options.cnpj).val());
