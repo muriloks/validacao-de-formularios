@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pt-BR">
+<!--<![endif]-->
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <title>Demonstração - Validador</title>
+   <meta name="description" content="" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+   <style>
+      .container {
+         margin-top: 3vmax;
+      }
+
+      .h1 {
+         margin-bottom: 2vmax;
+      }
+   </style>
+</head>
+
+<body>
+   <!--[if lt IE 7]>
+         <p>
+            Você está utilizando um navegador <strong>ultrapassado</strong>.
+            Por favor, troque de navegador para uma melhor experiência.
+         </p>
+      <![endif]-->
+
+   <div class="container align-middle">
+      <div class="h1">Validação de formulários - Demonstração</div>
+      <div class="row">
+         <div class="col-sm-12 col-md-6">
+            <form>
+               <p>Validações com webservice</p>
+               <div class="form-group">
+                  <label for="exemploCEP">CEP:</label>
+                  <input type="email" class="form-control" id="exemploCEP" aria-describedby="ajudaCEP"
+                     placeholder="Digite o seu CEP" />
+                  <small id="ajudaCEP" class="form-text text-muted">Ativado quando a tecla é solta.</small>
+               </div>
+               <div class="form-group">
+                  <label for="exemploEndereço">Endereço:</label>
+                  <input type="email" class="form-control" id="exemploEndereço" aria-describedby="ajudaEndereço"
+                     placeholder="Digite o seu Endereço" />
+                  <small id="ajudaEndereço" class="form-text text-muted">Obtido através do webservice.</small>
+               </div>
+               <div class="form-group">
+                  <label for="exemploBairro">Bairro:</label>
+                  <input type="email" class="form-control" id="exemploBairro" aria-describedby="ajudaBairro"
+                     placeholder="Digite o seu Bairro" />
+                  <small id="ajudaBairro" class="form-text text-muted">Obtido através do webservice (quando
+                     disponível).</small>
+               </div>
+               <div class="form-group">
+                  <label for="exemploCidade">Cidade:</label>
+                  <input type="email" class="form-control" id="exemploCidade" aria-describedby="ajudaCidade"
+                     placeholder="Digite a sua Cidade" />
+                  <small id="ajudaCidade" class="form-text text-muted">Obtido através do webservice.</small>
+               </div>
+               <div class="form-group">
+                  <label for="exemploEstado">Estado:</label>
+                  <input type="email" class="form-control" id="exemploEstado" aria-describedby="ajudaEstado"
+                     placeholder="Digite o seu Estado" />
+                  <small id="ajudaEstado" class="form-text text-muted">Obtido através do webservice.</small>
+               </div>
+         </div>
+         <div class="col-sm-12 col-md-6">
+            <p>Validações sem webservice</p>
+            <div class="form-group">
+               <label for="exemploCPF">CPF:</label>
+               <input type="email" class="form-control" id="exemploCPF" aria-describedby="ajudaCPF"
+                  placeholder="Digite o seu CPF" />
+               <small id="ajudaCPF" class="form-text text-muted">Formatação: XXX.XXX.XXX-XX.</small>
+            </div>
+            <div class="form-group">
+               <label for="exemploCNPJ">CNPJ:</label>
+               <input type="email" class="form-control" id="exemploCNPJ" aria-describedby="ajudaCNPJ"
+                  placeholder="Digite o seu CNPJ" />
+               <small id="ajudaCNPJ" class="form-text text-muted">Formatação: XX.XXX.XXX/XXXX-XX</small>
+            </div>
+            <div class="form-group">
+               <label for="exemploTelefone">Telefone:</label>
+               <input type="email" class="form-control" id="exemploTelefone" aria-describedby="ajudaTelefone"
+                  placeholder="Digite o seu Telefone" />
+               <small id="ajudaTelefone" class="form-text text-muted">Formatação: (XX) XXXXX-XXXX.</small>
+            </div>
+            <div class="form-group">
+               <label for="exemploData">Data:</label>
+               <input type="email" class="form-control" id="exemploData" aria-describedby="ajudaData"
+                  placeholder="Digite a data" />
+               <small id="ajudaData" class="form-text text-muted">Formatação: XX/XX/XXXX .</small>
+            </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script>
+      let options = {
+         cep: '#exemploCEP',
+         webservice: {
+            endereco: '#exemploEndereco',
+            bairro: '#exemploBairro',
+            cidade: '#exemploCidade',
+            estado: '#exemploEstado'
+         },
+         cpf: '#exemploCPF',
+         data: '#exemploData',
+         cnpj: '#exemploCNPJ',
+         telefone: '#exemploTelefone'
+      };
+   </script>
+   <script src="validador-formularios.js"></script>
+</body>
+
+</html>
