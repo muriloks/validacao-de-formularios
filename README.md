@@ -15,10 +15,6 @@ Primeiramente adicione o arquivo ao seu projeto realizando o download no mesmo a
 
 <blockquote> <script src="validador-formularios.js"></script> </blockquote>
 
-ou via CDN
-
-<blockquote> <script src="validador-formularios.js"></script> </blockquote>
-
 <h1> Utilização </h1>
 
 <ul>
