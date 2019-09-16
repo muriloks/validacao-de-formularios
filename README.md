@@ -11,7 +11,7 @@ Sejam bem vindos!
    <li> Bootstrap (no código da demonstração) </li>
 </ul>
 
-Primeiramente adicione o arquivo ao seu projeto realizando o download no mesmo através do repositório
+Primeiramente adicione o arquivo ao seu projeto realizando o download do mesmo através do repositório
 
 <blockquote> <script src="validador-formularios.js"></script> </blockquote>
 
