@@ -69,6 +69,6 @@ Exemplo:
       };
 ```    
 
-O webservice utilizado aqui é o da http://viacep.com.br
+O webservice utilizado aqui é o da http://viacep.com.br.
 
 
